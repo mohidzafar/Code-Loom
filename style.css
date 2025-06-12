@@ -7,9 +7,9 @@
     --secondary-bg-color: #48494b86;
     --text-color: #EBEBE8;
     --primary-color: #778A35;
-    --seconday-color: #D1E2C4;
+    --secondary-color: #D1E2C4;
     --selection-color: #e4e5e883;
-
+    --white-color: #FFFFFF;
 }
 
 body {
@@ -220,8 +220,8 @@ span {
 }
 
 #sign-btn:hover {
-    background-color: var(--seconday-color);
-    border-color: var(--seconday-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
     color: var(--primary-color);
     transition: all 0.2s ease-in-out;
 }
@@ -320,8 +320,8 @@ span {
 }
 
 .content button:hover {
-    background-color: var(--seconday-color);
-    border: 2px solid var(--seconday-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     color: var(--primary-color);
     transform: translateY(-10px);
     
@@ -354,6 +354,7 @@ span {
 .title{
     font-size: 3.3em;
     margin-top: 8px;
+    color: var(--text-color);
 }
 
 .cards{
@@ -489,7 +490,7 @@ span {
 }
 
 .service-card:hover p{
-    color: var(--seconday-color);
+    color: var(--secondary-color);
     
 }
 
@@ -619,7 +620,7 @@ span {
 }
 
 .team-para:hover {
-    color: var(--seconday-color);
+    color: var(--secondary-color);
 }
 
 .team-button {
@@ -640,8 +641,8 @@ span {
 }
 
 .team-button button:hover {
-    background-color: var(--seconday-color);
-    border: 2px solid var(--seconday-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     color: var(--primary-color);
     transform: translateY(-20px);;
 }
@@ -766,13 +767,87 @@ span {
 }
 
 .testimonal-button button:hover {
-    background-color: var(--seconday-color);
-    border: 2px solid var(--seconday-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     color: var(--primary-color);
     transform: translateY(-30px);
 }
 
+.subscription {
+    margin-top: 100px;
+    height: 600px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+
+
+.subscription span {
+    margin-bottom: 50px;
+    width: 500px;
+    text-align: center;
+    align-self: center;
+}
+
+.subscription-container {
+    background-image: url('images/subscription-bg.png');
+    background-size: contain; 
+    height: 70%;
+    width: 80%;
+    align-self: center;
+}
+
+
+
+.subscription-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.subscription-input {
+    width: 600px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: var(--bg-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--white-color);
+    text-align: center;
+}
+
+.subscription-input:focus {
+    outline: none;
+    
+}
+
+.subscription-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 10px;
+}
+.subscription-btn:hover {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+}
 
 
 
