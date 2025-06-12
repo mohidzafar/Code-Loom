@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -56,13 +57,17 @@
                             suscipit natus.
                         </p>
                         <button>Get Started</button>
-                        <img src="images/arrow.png" alt="arrow" class="arrow">
                     </div>
                 </div>
             </div>
+
+
             <div class="image">
-                <img src="images/among-us-rotating.png" alt="image" class="main-image">
+                <spline-viewer url="https://prod.spline.design/qdXoNLgof8Kd8ZM4/scene.splinecode"
+                    class="robot-3d"></spline-viewer>
             </div>
+
+
         </section>
         <section class="service-area">
             <div class="container">
@@ -76,7 +81,7 @@
                 </div>
                 <div class="card-container">
                     <div class="cards">
-                        <div class="service-card">
+                        <div class="service-card" id="web-card">
                             <div class="card-img" id="web-card-img">
                                 <img src="images/web-dev.png" alt="">
                             </div>
@@ -87,7 +92,7 @@
                                     creativity into every line of code.</p>
                             </div>
                         </div>
-                        <div class="service-card">
+                        <div class="service-card" id="app-dev-card">
                             <div class="card-img" id="app-card-img">
                                 <img src="images/app-dev.png" alt="">
                             </div>
@@ -98,7 +103,7 @@
                                     engage and inspire.</p>
                             </div>
                         </div>
-                        <div class="service-card">
+                        <div class="service-card" id="ai-card">
                             <div class="card-img" id="ai-card-img">
                                 <img src="images/ai.png" alt="">
                             </div>
@@ -109,7 +114,7 @@
                                     business.</p>
                             </div>
                         </div>
-                        <div class="service-card">
+                        <div class="service-card" id="iot-card">
                             <div class="card-img" id="iot-card-img">
                                 <img src="images/iot.png" alt="">
                             </div>
@@ -200,7 +205,6 @@
                         </div>
                         <div class="team-button">
                             <button>Meet Our Loomers</button>
-                            <img src="images/arrow.png" alt="arrow" class="arrow" id="team-arrow">
                         </div>
                     </div>
                 </div>
@@ -212,92 +216,483 @@
                 <span class="sub-title">Testimonals</span>
                 <h2 class="title">What Our Customer Say <br>About Us</h2>
             </div>
-            <div class="testimonal-card-container">
-                <div class="review-card" id="review-card-1">
 
-                    <div class="review-card-header">
-                        <div class="review-card-img"><img src="images/logo.png" alt=""></div>
-                        <div class="review-card-header-text">
-                            <h3>Cristopher Maguire</h3>
-                            <p>Founder of Nothing</p>
+            <!-- Swiper HTML structure -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonal-card-container">
+                            <div class="review-card" id="review-card-1">
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similique aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-2">
+
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similique aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-3">
+
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similisque aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-4">
+
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similisque aperiam.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                    </div>
-                    <div class="review-card-body">
-                        <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quod soluta tempore
-                            temporibus
-                            recusandae ad praesentium, minus quaerat numquam voluptas culpa quam delectus doloribus!
-                            Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium temporibus eveniet
-                            accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe iure, aut unde
-                            ullam. Eveniet, similique aperiam.
-                        </p>
-                    </div>
-                </div>
-                <div class="review-card" id="review-card-2">
+                    <div class="swiper-slide">
+                        <div class="testimonal-card-container">
+                            <div class="review-card" id="review-card-1">
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similique aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-2">
 
-                    <div class="review-card-header">
-                        <div class="review-card-img"><img src="images/logo.png" alt=""></div>
-                        <div class="review-card-header-text">
-                            <h3>Cristopher Maguire</h3>
-                            <p>Founder of Nothing</p>
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similique aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-3">
+
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similisque aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-4">
+
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similisque aperiam.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                    </div>
-                    <div class="review-card-body">
-                        <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quod soluta tempore
-                            temporibus
-                            recusandae ad praesentium, minus quaerat numquam voluptas culpa quam delectus doloribus!
-                            Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium temporibus eveniet
-                            accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe iure, aut unde
-                            ullam. Eveniet, similique aperiam.
-                        </p>
-                    </div>
-                </div>
-                <div class="review-card" id="review-card-3">
+                    <div class="swiper-slide">
+                        <div class="testimonal-card-container">
+                            <div class="review-card" id="review-card-1">
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similique aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-2">
 
-                    <div class="review-card-header">
-                        <div class="review-card-img"><img src="images/logo.png" alt=""></div>
-                        <div class="review-card-header-text">
-                            <h3>Cristopher Maguire</h3>
-                            <p>Founder of Nothing</p>
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similique aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-3">
+
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similisque aperiam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-card" id="review-card-4">
+
+                                <div class="review-card-header">
+                                    <div class="review-card-img"><img src="images/logo.png" alt=""></div>
+                                    <div class="review-card-header-text">
+                                        <h3>Cristopher Maguire</h3>
+                                        <p>Founder of Nothing</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="review-card-body">
+                                    <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Quod soluta tempore
+                                        temporibus
+                                        recusandae ad praesentium, minus quaerat numquam voluptas culpa quam
+                                        delectus
+                                        doloribus!
+                                        Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium
+                                        temporibus eveniet
+                                        accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe
+                                        iure,
+                                        aut unde
+                                        ullam. Eveniet, similisque aperiam.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                    </div>
-                    <div class="review-card-body">
-                        <p> <span class="review-card-space"></span>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quod soluta tempore
-                            temporibus
-                            recusandae ad praesentium, minus quaerat numquam voluptas culpa quam delectus doloribus!
-                            Voluptates dolores nisi qui voluptas autem velit. Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Perspiciatis inventore voluptatem deleniti praesentium temporibus eveniet
-                            accusamus nesciunt cupiditate doloribus velit neque voluptatibus, saepe iure, aut unde
-                            ullam. Eveniet, similisque aperiam.
-                        </p>
-                    </div>
                 </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    loop: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+
+
+
             <div class="testimonal-button">
                 <button>Explore More</button>
             </div>
@@ -398,12 +793,17 @@
                 <p><i class='bx bxs-map'></i> &nbsp; <a href="#">xyz, example, Pakistan</a></p>
             </div>
         </div>
+        <div class="footer-divider">
+            <div class="footer-line"></div>
+        </div>
         <div class="footer-bar">
             <p>Made with <i class='bx bxs-heart' id="heart"></i> by <span>C</span>ode <span>L</span>oom</p>
             <p><i class='bx bx-copyright' id="copyright"></i> 2025 <span>C</span>ode <span>L</span>oom. All Rights
                 Reserved</p>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.4/build/spline-viewer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
