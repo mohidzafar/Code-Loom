@@ -775,7 +775,7 @@ span {
 
 .subscription {
     margin-top: 100px;
-    height: 600px;
+    height: 500px;
     width: 100%;
     display: inline-flex;
     justify-content: center;
@@ -828,7 +828,6 @@ span {
 
 .subscription-input:focus {
     outline: none;
-    
 }
 
 .subscription-btn {
@@ -880,7 +879,7 @@ span {
 
 
 footer {
-    margin-top: 400px;
+    margin-top: 200px;
     background-color: var(--primary-color);
 }
 
