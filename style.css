@@ -609,6 +609,12 @@ span {
     margin: 10px 0px 50px 150px;
 }
 
+.team-img {
+    height: 650px;
+    border: 2px dotted var(--primary-color);
+}
+
+
 .team-content {
     margin: 40px 0px 0px 0px;
 }
