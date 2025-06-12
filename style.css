@@ -98,20 +98,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
+    margin: 20px 20px 20px 40px;
 }
 
 
 
 .logo-title {
     flex: 1;
-    margin: 20px 0px 0px 110px;
+    margin: 0px 0px 0px 110px;
     text-decoration: none;
     color: var(--text-color);
     font-size: 2rem;
     animation-duration: 1s;
     animation-name: animate-title;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;;
 }
 
 @keyframes animate-title {
@@ -126,6 +126,7 @@ body {
 
 .logo-title span {
     color: var(--primary-color);
+    font-size: 38px;
 }
 
 span {
@@ -141,11 +142,11 @@ span {
 .nav-div ul {
     display: flex;
     list-style: none;
-    
+    margin: 0px 200px 0px 20px;
 }
 
 .nav-div ul li {
-    margin: 20px 10px 0px 40px;
+    margin: 20px 30px 20px 40px;
     animation-name: animate-nav-links;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -329,7 +330,7 @@ span {
 
 
 .service-area {
-    margin-top: 400px;
+    margin-top: 200px;
     height: 500px;
     width: 100%;;
 }
