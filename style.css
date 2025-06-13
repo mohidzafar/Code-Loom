@@ -935,7 +935,7 @@ input:checked + .slider:before {
 
 
 footer {
-    margin-top: 200px;
+    margin-top: 50px;
     background-color: var(--primary-color);
 }
 

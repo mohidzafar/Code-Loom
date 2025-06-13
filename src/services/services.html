@@ -17,19 +17,143 @@
     <span class="loader"></span>
     <header>
         <nav class="navbar">
+
             <a href="#" class="logo-title"><span>C</span>ode <span>L</span>oom</a>
             <div class="nav-div">
                 <ul>
                     <li><a href="/index.html">Home</a></li>
-                    <li><a href="services.html" id="active">Services</a></li>
+                    <li><a href="#" id="active">Services</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <li>
+                        <div class="slider-container">
+                            <i class='bx bx-sun' id="nav-sun"></i>
+
+                            <label class="switch">
+                                <input type="checkbox" id="darkToggle" />
+                                <span class="slider"></span>
+                            </label>
+                            <i class='bx bx-moon' id="nav-moon"></i>
+                        </div>
+                    </li>
                 </ul>
             </div>
+
         </nav>
-        <div class="main-container">
-        </div>
     </header>
+
+    <main>
+        <div class="services-main">
+            <section class="main-content">
+                <div class="main-container">
+                    <div class="main-text-container">
+                        <h1 class="main-title">Our Services</h1>
+                        <div class="main-head-sub-title-container">
+                            <div class="main-head-sub-title">
+                                <div class="main-head-sub-title-content">
+                                    <h2 class="main-head-sub-title">
+                                        <a href="/index.html">Home / </a>
+                                        <a href="#" id="active">Services</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-img-container">
+                        <spline-viewer url="https://prod.spline.design/e1PVuawjF6V8V2jg/scene.splinecode"
+                            class="main-img"></spline-viewer>
+                    </div>
+                    <div class="main-service-description">
+                        <p>Code Loom is a leading software house that provides a comprehensive range of services to help
+                            businesses leverage the power of technology to grow and thrive. Our team of seasoned
+                            professionals is dedicated to delivering innovative, cost-effective solutions that align
+                            with
+                            the unique needs of each client.
+
+                        </p>
+                    </div>
+            </section>
+            <section class="statistics">
+                <div class="stats-container">
+                    <div class="stats-card-container">
+                        <div class="stats-satisfaction-rate">
+                            <div class="stats-content">
+                                <h2>95%</h2>
+                                <p>Customer Satisfaction Rate</p>
+                            </div>
+                        </div>
+                        <div class="stats-employes">
+                            <div class="stats-content">
+                                <h2>100+</h2>
+                                <p>Employes Team</p>
+                            </div>
+                        </div>
+                        <div class="stats-projects">
+                            <div class="stats-content">
+                                <h2>20+</h2>
+                                <p>Projects Dilevered <br>with a Success</p>
+                            </div>
+                        </div>
+                        <div class="stats-clients">
+                            <div class="stats-content">
+                                <h2>30+</h2>
+                                <p>Active Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="our-company">
+            <div class="our-company-content">
+                <div class="top-content">
+                    <div class="our-company-sub-title">
+                        <div class="sub-title">Our Company</div>
+                    </div>
+                    <div class="title-container">
+                        <div class="title">Revolutionizing the Future with Next-Generation Software Solutions
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Our mission is to provide innovative technology solutions that drive business growth,
+                            efficiency, and customer experience. With a team of experienced professionals, we deliver
+                            exceptional value to clients through software development and consulting services.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="lower-content">
+                    <div class="img">
+
+                        <spline-viewer url="https://prod.spline.design/MXQZZOHKl5IiWHUL/scene.splinecode"
+                            class="computer-3d"></spline-viewer>
+                    </div>
+                    <div class="check-content">
+                        <div class="check-header"></div>
+                        <div class="check-lines"></div>
+                    </div>
+                    <div class="our-company btn"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67,6 +191,7 @@
 
         <div class="subscription-container">
             <div class="subscription-header">
+
                 <h2 class="title">Subscribe to stay updated</h2>
             </div>
             <form action="#" method="post" class="subscription-form">
@@ -75,6 +200,10 @@
             </form>
         </div>
     </section>
+
+
+
+
 
     <footer>
         <div class="footer">
@@ -118,8 +247,9 @@
                 Reserved</p>
         </div>
     </footer>
-
-
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.4/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.5/build/spline-viewer.js"></script>
+    <script src="services.js"></script>
 </body>
 
 </html>
