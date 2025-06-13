@@ -17,16 +17,28 @@
     <span class="loader"></span>
     <header>
         <nav class="navbar">
-            <!--<img src="ChatGPT Image Apr 25, 2025, 07_29_00 PM.png" alt="logo img" id="logo"> -->
+
             <a href="#" class="logo-title"><span>C</span>ode <span>L</span>oom</a>
             <div class="nav-div">
                 <ul>
                     <li><a href="#" id="active">Home</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="src/services/services.html">Services</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <li>
+                        <div class="slider-container">
+                            <i class='bx bx-sun' id="nav-sun"></i>
+
+                            <label class="switch">
+                                <input type="checkbox" id="darkToggle" />
+                                <span class="slider"></span>
+                            </label>
+                            <i class='bx bx-moon' id="nav-moon"></i>
+                        </div>
+                    </li>
                 </ul>
             </div>
+
         </nav>
     </header>
     <main>
@@ -59,7 +71,7 @@
 
 
             <div class="image">
-                <spline-viewer url="https://prod.spline.design/qdXoNLgof8Kd8ZM4/scene.splinecode"
+                <spline-viewer url="https://prod.spline.design/ZMBgECt43aNbWskb/scene.splinecode"
                     class="robot-3d"></spline-viewer>
             </div>
 
@@ -815,6 +827,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.4/build/spline-viewer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="dark.js"></script>
 </body>
 
 </html>

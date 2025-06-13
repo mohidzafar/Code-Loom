@@ -3,18 +3,38 @@
 * {
     margin: 0;
     padding: 0;
+    
+}
+
+:root {
+    --bg-color: #f3f2eb;
+    --secondary-bg-color: #6e6e6ee7;
+    --primary-color: #970707;
+    --secondary-color: #000000c7;
+    --primary-text-color: #1B1717;
+    --secondary-text-color: #f3f2eb;
+    --faded-text-color: #6b645d99;
+    --primary-btn-color: #f3f2eb;
+    --secondary-btn-color: #f3f2eb;
+    --selection-color: #e4e5e883;
+}
+
+body.dark {
     --bg-color: #31352E;
-    --secondary-bg-color: #48494b86;
-    --text-color: #EBEBE8;
+    --secondary-bg-color: #6e6e6ee7;
     --primary-color: #778A35;
     --secondary-color: #D1E2C4;
+    --primary-text-color: #f3f2eb;
+    --secondary-text-color: #f3f2eb;
+    --faded-text-color: #6b645d99;
+    --primary-btn-color: #f3f2eb;
+    --secondary-btn-color: #000000c7;
     --selection-color: #e4e5e883;
-    --white-color: #FFFFFF;
 }
 
 body {
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--primary-text-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: "inter", sans-serif!important;
 }
@@ -107,7 +127,7 @@ body {
     flex: 1;
     margin: 0px 0px 0px 110px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-text-color);
     font-size: 2rem;
     animation-duration: 1s;
     animation-name: animate-title;
@@ -142,7 +162,8 @@ span {
 .nav-div ul {
     display: flex;
     list-style: none;
-    margin: 0px 200px 0px 20px;
+    margin: 0px 50px 0px 20px;
+    
 }
 
 .nav-div ul li {
@@ -150,11 +171,13 @@ span {
     animation-name: animate-nav-links;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    display: flex;
+    align-items: center;
 }
 
 .nav-div ul li a{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-text-color);
     font-size: 16px;
     
 }
@@ -175,56 +198,76 @@ span {
     transition: all 0.2s ease-in-out;
 }
 
-.signup {
-    margin-top: 18px;
-    padding-right: 100px;
-    margin-left: 100px;
+.slider-container {
+  text-align: center;
+  padding: 0px 20px;
+  margin-left: 100px;
 }
 
-.signup button {
-    height: 40px;
-    width: 100px;
-    font-size: 14px;
-    animation-name: animate-sign-btn;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 0px;
+  
 }
 
-@keyframes animate-sign-btn {
-    from {
-        transform: translateX(40px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-#reg-btn {
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--secondary-bg-color);
+  transition: 0.4s;
+  border-radius: 34px;
 }
 
-#sign-btn {
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    color: #fff;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--secondary-text-color);
+  transition: 0.4s;
+  border-radius: 50%;
 }
 
-#reg-btn:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-    transition: all 0.2s ease-in-out;
+input:checked + .slider {
+  background-color: var(--primary-color);
 }
 
-#sign-btn:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    color: var(--primary-color);
-    transition: all 0.2s ease-in-out;
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+
+
+#nav-sun {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    color: var(--primary-text-color);
+    font-size: 24px;
+}
+#nav-moon {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 24px;
+    height: 24px;
+    color: var(--primary-text-color);
+    font-size: 24px;
 }
 
 .image {
@@ -262,7 +305,7 @@ span {
 .content h1 {
     font-size: 3.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--text-color);
+    color: var(--primary-text-color);
     animation: animate-home-heading 1s 1;
 }
 
@@ -300,14 +343,15 @@ span {
     height: 50px;
     width: 150px;
     background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    color: white;
+    border: none;
+    color: var(--primary-btn-color);
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
     animation: animate-home-button 1s 1;
     animation-delay: 0.3s;
+    cursor: pointer;
 }
 
 @keyframes animate-home-button {
@@ -322,8 +366,7 @@ span {
 
 .content button:hover {
     background-color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--secondary-btn-color);
     transform: translateY(-10px);
     
 }
@@ -355,7 +398,7 @@ span {
 .title{
     font-size: 3.3em;
     margin-top: 8px;
-    color: var(--text-color);
+    color: var(--primary-text-color);
 }
 
 .cards{
@@ -397,7 +440,7 @@ span {
 
 .service-card p {
     margin-top: 15px;
-    color: var(--text-color);
+    color: var(--primary-text-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -486,12 +529,12 @@ span {
 }
 
 .card-content p{
-    color: #6b645d99;
+    color: var(--faded-text-color);
     line-height: 26px;
 }
 
 .service-card:hover p{
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
     
 }
 
@@ -554,7 +597,7 @@ span {
     border: 1px dotted #94949488;
     border-bottom-right-radius: 200px;
     border-top-left-radius: 200px;
-    color: var(--text-color);
+    color: var(--primary-text-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -622,12 +665,12 @@ span {
 .team-para {
     margin: 20px 120px 0px 2px;
     line-height: 28px;
-    color: #6b645d99;
+    color: var(--faded-text-color);
     transition: all 0.3s ease-in-out;
 }
 
 .team-para:hover {
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 
 .team-button {
@@ -638,19 +681,19 @@ span {
 .team-button button{
     height: 60px;
     width: 150px;
-    border: 2px solid var(--primary-color);
-    border-radius: 2px;
-    color: var(--text-color);
+    border: none;
+    color: var(--primary-btn-color);
     background-color: var(--primary-color);
     font-size: 14px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
     
 }
 
 .team-button button:hover {
     background-color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--secondary-btn-color);
+    border: none;
     transform: translateY(-20px);;
 }
 
@@ -728,7 +771,7 @@ span {
 }
 
 .review-card-header {
-    color: black;
+    color: var(--primary-text-color);
     font-size: 12px;
     margin: 20px 0px 0px 20px;
     display: flex;
@@ -748,7 +791,7 @@ span {
 .review-card-body {
     margin: 10px 50px 0px 30px;
     font-size: 12px;
-    color: #928f8fcc;
+    color: var(--faded-text-color);
 }
 
 .stars {
@@ -766,8 +809,8 @@ span {
     height: 80px;
     width: 1100px;
     background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    color: white;
+    border: none;
+    color: var(--primary-btn-color);
     font-size: 1.2em;
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
@@ -775,10 +818,45 @@ span {
 
 .testimonal-button button:hover {
     background-color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--secondary-btn-color);
+    cursor: pointer;
+    border: none;
     transform: translateY(-30px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .subscription {
     margin-top: 100px;
@@ -823,13 +901,13 @@ span {
 
 .subscription-input {
     width: 600px;
-    height: 50px;
-    border-radius: 25px;
+    height: 55px;
+    border-radius: 35px;
     padding-left: 20px;
     font-size: 16px;
-    color: var(--bg-color);
-    background-color: var(--white-color);
-    border: 2px solid var(--white-color);
+    color: var(--primary-text-color);
+    background-color: var(--secondary-text-color);
+    border: none;
     text-align: center;
 }
 
@@ -839,50 +917,21 @@ span {
 
 .subscription-btn {
     width: 200px;
-    height: 50px;
-    border-radius: 25px;
+    height: 55px;
+    border-radius: 30px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--primary-btn-color);
     font-size: 16px;
-    border: 2px solid var(--primary-color);
+    border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     margin-left: 10px;
 }
 .subscription-btn:hover {
     background-color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--secondary-btn-color);
+    border: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer {
@@ -907,27 +956,27 @@ footer {
 .footer-line {
     height: 2px;
     width: 90%;
-    background-color: var(--bg-color);
+    background-color: var(--secondary-text-color);
     align-self: center;
 }
 
 .footer-bar {
     height: 60px;
     background: var(--primary-color);
-    color: var(--text-color);
+    color: var(--secondary-text-color);
     text-align: center;
     padding-top: 20px;
 }
 
 .heart {
-    color: var(--bg-color);
+    color: var(--secondary-text-color);
 }
 
 
 
 .footer {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--secondary-text-color);
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -953,7 +1002,7 @@ footer {
 }
 
 .footer-column a {
-    color: var(--text-color);
+    color: var(--secondary-text-color);
     text-decoration: none;
     margin: 5px 0;
     font-size: 14px;
@@ -982,22 +1031,19 @@ footer {
     width: 30px;
     height: 24px;
     padding-top: 6px;
-    border: 1px solid #fff;
-    color: white;
+    border: 1px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
     border-radius: 20%;
     transition: all 0.3s ease-in-out;
 }
 
 .icon:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid black;
+    color: var(--primary-color);
+    background-color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-text-color);
     transform: translateY(-10px);
 }
 
-#heart {
-    color: var(--bg-color);
-}
 
 
 
