@@ -412,9 +412,10 @@ input:checked + .slider:before {
 }
 
 .service-card {
-    border: 1px dotted #94949488;
+    border: 1px dotted #0a2d5511;
     border-radius: 23px;
     background-color: var(--bg-color);
+    box-shadow: -20px -30px 15px var(--bg-color), 5px 5px 15px #0a2d551c;
     display: inline-block;
     width: 300px;
     height: 450px;
@@ -653,8 +654,11 @@ input:checked + .slider:before {
 }
 
 .team-img {
-    height: 650px;
+    height: 600px;
     border: 2px dotted var(--primary-color);
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 
