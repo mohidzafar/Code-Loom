@@ -537,12 +537,135 @@ input:checked + .slider:before {
 
 
 
+.company-success {
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.company-success-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-success-header {
+    margin: 0 0 20px 150px;
+}
+
+.company-success-sub-title {
+    margin-bottom: 20px;
+}
+
+.company-success-sub-title h2{
+    font-size: 1.1em;
+    color: var(--primary-color);
+    font-weight: 400;
+    
+}
+
+.company-success-title {
+    font-size: 2.5em;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.company-success-description {
+    color: var(--faded-text-color);
+    width: 100%;
+    margin-top: 20px;
+    line-height: 1.6em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.company-success-description:hover {
+    color: var(--primary-text-color);   
+}
+
+.company-success-rating {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.company-success-rating ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    color: var(--primary-text-color);
+    margin: 10px 0 0px 150px;
+    height: 20px;
+}
 
 
+.progress-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.success-rating-content-header {
+    height: 10px;
+    width: 30%;
+    font-family: 'Poppins', Inter;
+    font-size: 14px;
+    color: var(--faded-text-color);
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.success-rating-content-header:hover {
+    color: var(--primary-text-color);
+}
+
+.progress-bar {
+    width: 30%;
+    height: 7px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+}
+
+.app-visible-progress-bar {
+    width: 95%;
+    background-color: #7DDB39;
+    border-radius: 5px;
+}
+
+.web-visible-progress-bar {
+    width: 85%;
+    background-color: #F26F3B;
+    border-radius: 5px;
+}
+
+.product-visible-progress-bar {
+    width: 90%;
+    background-color: #398DDB;
+    border-radius: 5px;
+}
+
+.development-visible-progress-bar {
+    width: 99%;
+    background-color: #ECB321;
+    border-radius: 5px;
+}
 
 
-
-
+.company-success-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
