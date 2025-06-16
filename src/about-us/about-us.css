@@ -426,6 +426,12 @@ input:checked + .slider:before {
     margin-top: 50px;
     text-align: start;
     line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.content-description:hover {
+    color: var(--primary-text-color);
 }
 
 .content-cards {
@@ -589,7 +595,7 @@ input:checked + .slider:before {
 }
 
 .company-success-title {
-    font-size: 2.5em;
+    font-size: 2em;
     color: var(--primary-text-color);
     font-weight: bold;
     margin-top: 30px;
@@ -688,11 +694,140 @@ input:checked + .slider:before {
 
 
 
+.about-us-history-bg {
+    margin-top: 200px;
+    background: url('../../images/our-company-bg.png');
+    height: 1500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #2b3552;
+}
 
+.about-us-history-top {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.about-us-history-top-sub-title {
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color);
+}
 
+.about-us-history-top-sub-title h2{
+    font-size: 1.2em;
+    font-weight: 400;
+}
 
+.about-us-history-top-title {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
 
+.about-us-history-top-title h1{
+    color: var(--secondary-text-color);
+    font-weight: 600;
+}
+
+.about-us-history-top-description {
+    margin-top: 40px;
+    width: 40%;
+    text-align: center;
+    color: var(--faded-text-color);
+    line-height: 22px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-us-history-top-description:hover {
+    color: var(--secondary-text-color);
+}
+
+.about-us-history-main {
+    margin: 50px 5% 0 5%;
+    width: 90%;
+    height: 40%;
+    background-color: #212737;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-history-main-left-image {
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+}
+
+.about-us-history-main-left-image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.about-us-history-main-right-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-history-main-right-content-header {
+    color: var(--secondary-text-color);
+    width: 70%;
+    margin: 80px 0 0 80px;
+    font-size: 1.2em;
+}
+
+.about-us-history-main-right-content-description {
+    color: var(--faded-text-color);
+    width: 70%;
+    margin: 30px 0 0 80px;
+    font-size: 1em;
+    line-height: 24px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-us-history-main-right-content-description:hover {
+    color: var(--secondary-text-color);
+}
+
+.about-us-history-main-right-content-check-list {
+    color: var(--faded-text-color);
+    width: 70%;
+    margin: 60px 0 0 80px;
+    
+}
+
+.about-us-history-main-right-content-check-list ul{
+    list-style: none;
+}
+
+.about-us-history-main-right-content-check-list ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-us-history-main-right-content-check-list ul li:hover {
+    color: var(--secondary-text-color);
+}
+
+.about-us-history-main-right-content-check-list ul li img {
+    margin-right: 10px;
+}
 
 
 
