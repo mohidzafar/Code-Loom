@@ -128,24 +128,43 @@ body {
     color: var(--primary-text-color);
 }
 
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 20px 20px 40px;
+    margin: 0px 0px 20px 0px;
+    padding-top: 0px;
+    padding-left: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    transition: top 0.4s ease, box-shadow 0.3s ease;
 }
 
+.navbar.hide {
+    top: -100px; /* or -70px depending on navbar height */
+    opacity: 0;
+    box-shadow: none;
+}
+
+.navbar.show-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
 
 
 .logo-title {
     flex: 1;
-    margin: 0px 0px 0px 110px;
+    margin: 0px 300px 0px 110px;
     text-decoration: none;
+    width: 200px;
     color: var(--primary-text-color);
     font-size: 2rem;
     animation-duration: 1s;
     animation-name: animate-title;
-    animation-iteration-count: 1;;
+    animation-iteration-count: 1;
 }
 
 @keyframes animate-title {
