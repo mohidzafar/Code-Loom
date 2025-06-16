@@ -456,7 +456,7 @@ input:checked + .slider:before {
 
 
 .our-company-content {
-    background: url('/src/services/images/company_shape.png');
+    background: url('../../images/our-company-bg.png');
     height: 1000px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -870,7 +870,7 @@ input:checked + .slider:before {
 }
 
 .subscription-container {
-    background-image: url('/images/subscription-bg.png');
+    background-image: url('../../images/subscription-bg.png');
     background-size: contain; 
     height: 70%;
     width: 80%;
