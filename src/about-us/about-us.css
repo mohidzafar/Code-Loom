@@ -643,7 +643,7 @@ input:checked + .slider:before {
     font-size: 14px;
     color: var(--faded-text-color);
     font-weight: 300;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
@@ -697,7 +697,8 @@ input:checked + .slider:before {
 .about-us-history-bg {
     margin-top: 200px;
     background: url('../../images/our-company-bg.png');
-    height: 1500px;
+    height: auto;
+    padding-bottom: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -752,7 +753,7 @@ input:checked + .slider:before {
 .about-us-history-main {
     margin: 50px 5% 0 5%;
     width: 90%;
-    height: 40%;
+    height: 30%;
     background-color: #212737;
     border-radius: 25px;
     display: flex;
@@ -828,6 +829,252 @@ input:checked + .slider:before {
 .about-us-history-main-right-content-check-list ul li img {
     margin-right: 10px;
 }
+
+
+.about-us-history-timeline{
+    margin: 50px 10% 0 10%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us-history-timeline-bg {
+    background: url('../../images/about-us-company-timeline.png');
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-history-timeline-dot {
+    width: 100%;
+    height: 7px;
+    padding-bottom: 25px;
+}
+
+.about-us-history-timeline-dot ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.about-us-history-timeline-dot ul li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+#dot-1 {
+    height: 20px;
+    width: 20px;
+    background-color: #EAB76A;
+    animation: dot-1-pulse 1s infinite linear;
+}
+
+@keyframes dot-1-pulse {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 0 5px #eab76a3a;
+    }
+    100% {
+        box-shadow: 0 0 0 10px #eab76a00;
+    }
+}
+
+#dot-2 {
+    background-color: #F26666;
+    margin-top: 5px;
+    animation: dot-2-pulse 1s infinite linear;
+}
+
+@keyframes dot-2-pulse {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(234, 183, 106, 0.227);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(234, 183, 106, 0);
+    }
+}
+
+
+#dot-3 {
+    background-color: #D2F179;
+    margin-top: 3px;
+    animation: dot-3-pulse 1s infinite linear;
+}
+
+@keyframes dot-3-pulse {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(210, 241, 121, 0.227);
+    }
+    100% {
+        box-shadow: 0 0 0 10px #d1f17900;
+    }
+}
+
+#dot-4 {
+    background-color: #64EEE6;
+    margin-top: -5px;
+    animation: dot-4-pulse 1s infinite linear;
+}
+
+@keyframes dot-4-pulse {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(100, 238, 230, 0.227);
+    }
+    100% {
+        box-shadow: 0 0 0 10px #64eee700;
+    }
+}
+
+
+#dot-5 {
+    background-color: #A672E9;
+    margin-top: 15px;
+    animation: dot-5-pulse 1s infinite linear;
+}
+
+@keyframes dot-5-pulse {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(166, 114, 233, 0.227);
+    }
+    100% {
+        box-shadow: 0 0 0 10px #a672e900;
+    }
+}
+
+
+#dot-6 {
+    height: 20px;
+    width: 20px;
+    background-color: #76EC97;
+    animation: dot-6-pulse 1s infinite linear;
+}
+
+@keyframes dot-6-pulse {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(118, 236, 151, 0.227);
+    }
+    100% {
+        box-shadow: 0 0 0 10px #76ec9700;
+    }
+}
+
+.about-us-history-timeline-details-top {
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    justify-content: space-between;
+    margin-right: 250px;
+    margin-bottom: 30px;
+}
+
+.dot-details {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.year {
+    text-align: center;
+    color: var(--secondary-text-color);
+    font-size: 22px;
+}
+
+.milestone {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 5px;
+    text-align: center;
+    color: var(--faded-text-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.description:hover {
+    color: var(--secondary-text-color);
+}
+
+
+.about-us-history-timeline-details-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 44%;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 570px;
+}
+
+#milestone-2022:hover {
+    color: #F26666;
+}
+
+#milestone-2023:hover {
+    color: #D2F179;
+}
+
+#milestone-2024:hover {
+    color: #64EEE6;
+}
+
+#milestone-2025:hover {
+    color: #A672E9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
